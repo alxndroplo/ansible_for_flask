@@ -1,0 +1,8 @@
+- hosts: all
+  tasks:
+   - name: Git clone repository
+     git:
+       repo: https://github.com/alxndroplo/learning_2.git
+       dest: /home/user/helloworld
+       clone: yes
+       update: yes
